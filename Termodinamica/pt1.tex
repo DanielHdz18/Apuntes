@@ -5,7 +5,7 @@
 
 \subsection{Origen y alcance de la termodinámica}
 
-    La termodinámica nació en el siglo XIX, debido al surgimiento de las maquinas de vapor y la necesidad de estudiar su comportamiento \footnote{Una lectura más detallada sobre la historia de la termodinámica se puede encontrar en \cite{clavell}.}. La termodinámica se basa esencialmente en dos postulados o leyes fundamentales, que resumen los resultados experimentales de la interconversión de las diferentes formas de energía. Estos postulados o leyes no tiene demostración en el sentido matemático y no se pueden deducir de ningún otro conjunto de leyes físicas, se consideran validas ya que se ajustan a los resultados experimentales y a la falta de contraejemplos, es decir jamas se ha encontrando que algún proceso de interconversión de energía viole estos principios \parencites{glasstone}{smith-vanness}. 
+    La termodinámica nació en el siglo XIX, debido al surgimiento de las maquinas de vapor y la necesidad de estudiar su comportamiento\footnote{Una lectura más detallada sobre la historia de la termodinámica se puede encontrar en \cite{clavell}.}. La termodinámica se basa esencialmente en dos postulados o leyes fundamentales, que resumen los resultados experimentales de la interconversión de las diferentes formas de energía. Estos postulados o leyes no tiene demostración en el sentido matemático y no se pueden deducir de ningún otro conjunto de leyes físicas, se consideran validas ya que se ajustan a los resultados experimentales y a la falta de contraejemplos, es decir jamas se ha encontrando que algún proceso de interconversión de energía viole estos principios \parencites{glasstone}{smith-vanness}. 
     
     Todos los procesos de interconversión de energía (o procesos termodinámicos) requieren de un equipo para este fin, los ingenieros utilizan las leyes de la termodinámica en combinación con otras ciencias como la mecánica de fluidos y los fenómenos de transporte para analizar, diseñar y optimizar estos equipos donde se transforma la energía de un tipo a otra. El resultado de la aplicación de la termodinámica en estos equipos puede conllevar una mejora en el rendimiento de estos, a la reducción de los costos totales, a un menor uso de recursos escasos o a un menor impacto ambiental \parencites{wark}{moranshapiro}.
     
@@ -23,14 +23,19 @@
 
     \subsubsection{Sistemas de unidades}
 
-    Los conceptos de dimensión y unidad son comúnmente confundidos, para solventar esta confusión se presentan las definiciones de ambos conceptos. Las dimensiones son cantidades físicas mensurables, mientras que las unidades son patrones arbitrarios que se usan para realizar medidas sobre una dimensión, por ejemplo una dimensión es la longitud, mientras que el metro es un patrón de medida que permite describir una longitud de manera cuantitativamente, dado que todas las unidades que tienen la misma dimensión son mediciones de una cantidad física, estas están relacionadas entre sí por medio de un factor de conversión  \parencites{rubenstein}{doran}.
+    Los conceptos de dimensión y unidad son comúnmente confundidos, para solventar esta confusión se presentan las definiciones de ambos conceptos. Las dimensiones son cantidades físicas mensurables, mientras que las unidades son patrones arbitrarios que se usan para realizar medidas sobre una dimensión, por ejemplo una dimensión es la longitud, mientras que el metro es un patrón de medida que permite describir una longitud de manera cuantitativa \parencites{rubenstein}{doran}.
 
 
     La magnitud de cualquier cantidad física (o de cualquier dimensión) puede considerarse como el producto de un número por una unidad, donde la unidad adquiere una entidad matemática y puede considerarse como un número de tamaño variable. Por ejemplo la distancia entre dos puntos puede ser expresada como \qty{1}{\metre} o \qty{3.28}{\feet} o \qty{100}{\centi\metre}, en donde \numlist{1;3.28;100} son el número de unidades y \unit{m}, \unit{\feet}, \unit{\centi\metre} son el tamaño de cada unidad \parencite{coulson1}.
 
-     
+    Existen determinadas reglas para poder operar con las unidades. La primera de ellas establece que solo es posible, sumar, restar o expresar una igualdad entre dos magnitudes físicas si estas tienen las mismas unidades (y por tanto las mismas dimensiones), sin embargo la segunda regla establece que es posible multiplicar o dividir unidades entre sí sin ninguna restricción, es por esta segunda regla que a partir de una serie de dimensiones, denominadas dimensiones básicas, es costumbre expresar otras dimensiones de interés en diferentes campos de la física y la ingeniería como derivadas de estas dimensiones básicas, estas dimensiones derivadas pueden surgir por la existencia de una ley física que relacione ambas magnitudes o por definiciones que resulten operativamente útiles \parencites{himme}{volker}.
 
-\printbibliography[title=Bibliografía del capítulo]
+    Entonces un sistema de unidades toma una serie de dimensiones básicas a partir de las cuales se eligen arbitrariamente unidades básicas para realizar mediciones sobre las dimensiones básicas. Generalmente en física se suelen elegir como dimensiones básicas la longitud \textbf{L}\nomenclature{\textbf{L}}{Dimensión longitud}, el tiempo \textbf{T} \nomenclature{\textbf{T}}{Dimensión tiempo}, la masa \textbf{M}\nomenclature{\textbf{M}}{Dimensión masa}, la temperatura \( \bm{\Theta} \)\nomenclature{\( \bm{\Theta} \) }{Dimensión temperatura}.
+
     
+    \renewcommand{\nomname}{Nomenclatura del capítlo}
+    \printnomenclature
+    
+    \printbibliography[title=Bibliografía del capítulo]
 
 \end{document}

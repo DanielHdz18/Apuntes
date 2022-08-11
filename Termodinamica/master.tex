@@ -1,28 +1,28 @@
 \PassOptionsToPackage{backref=true}{biblatex} %Agrega las referencias inversas en la bibliografía pasando backref=true a biblatex
 \documentclass[10pt, letterpaper]{article}
 \input{../preambulo.tex} % Agrega el preámbulo base del repositorio 
-
 \addbibresource{../Bibliografia/Libros.bib} %Conecta con el archivo de referencias principal de libros
+
+\usepackage{subfiles} %Permite modular el archivo principal es varios "subfiles" para su compilación conjunta o individual
+\usepackage{lua-widow-control} %Control de viudas y huérfanas apoyado en lua
+\usepackage{bm}
 
 \usepackage{siunitx} %Usa el paquete para escribir unidades del SI
 \DeclareSIUnit\inch{in} %Declara el uso de la unidad inglesa pulgada 
 \DeclareSIUnit\feet{ft} %Declara el uso de la unidad inglesa pie
 
-
-\usepackage{subfiles} %Permite modular el archivo principal es varios "subfiles" para su compilación conjunta o individual
-\usepackage{lua-widow-control} %Control de viudas y huérfanas apoyado en lua
+\usepackage{nomencl} %Crea la lista que incluye las nomenclaturas de símbolos
+\makenomenclature
 
 \title{Termodinámica} %Titulo del documento
 \author{Daniel Alejandro Hernández del Angel} %Autor del documento
-
 
 \begin{document}
 
 \maketitle
 \clearpage
 \tableofcontents
-\clearpage
 
-\subfile{pt1.tex}
+\subfileinclude{pt1.tex}
 
 \end{document}
