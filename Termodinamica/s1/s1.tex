@@ -47,16 +47,23 @@ Entonces un sistema de unidades toma una serie de dimensiones básicas a partir 
     \caption*{Adaptada de \cite{doran}}
 \end{longtable}
 
-\subsubsection{Sistemas termodinámicos} 
+\subsubsection{Sistemas termodinámicos}
 
-Un sistema termodinámico es un cierto volumen en el espacio o una cantidad finita de materia implicados en el proceso termodinámico bajo estudio, este sistema debe de estar delimitado por una superficie o frontera, que puede ser real o imaginaria, fija o móvil, que separa al sistema del resto del volumen o materia que no participa en el proceso, a este entorno circundante al sistema se le denomina de varias maneras; medio ambiente, entorno o alrededores \parencites{clavell}{faires}{wark}.
+Un sistema termodinámico es un cierto volumen en el espacio o una cantidad finita de materia implicados en el proceso termodinámico bajo estudio, este sistema debe de estar delimitado por una superficie o frontera, que puede ser real, imaginaria o una combinación de estas, fija o móvil, que separa al sistema del resto del volumen o materia existente fuera del sistema, a este entorno circundante al sistema se le denomina de varias maneras; medio ambiente, entorno o alrededores. Como se puede observar en la figura \ref{fig:exp_sistema} el sistema no tiene porque tener una forma regular, basta con que tenga una manera de diferenciarlo de los alrededores \parencites{clavell}{faires}{wark}.
 
 \begin{figure}[htbp]
     \centering
-    \subfileinclude{images/sistema1.tex}
+    \subfile{images/sistema1.tex}
+    \caption{Ejemplo de un sistema termodinámico y su frontera.}
+    \label{fig:exp_sistema}
 \end{figure}
 
+Los sistemas pueden clasificarse de varias maneras: Un \emph{sistema cerrado} es aquel en el que no hay flujo de masa a través de su frontera, es decir aquel sistema con una masa invariable, pero puede intercambiar energía con los alrededores por medio de sus fronteras, por el contrario un \emph{sistema abierto} es aquel donde existe un flujo a través de las fronteras del sistema, por lo que la materia al interior del sistema no permanece invariable, en este tipo de sistemas el volumen permanece constante y también puede intercambiar energía con los alrededores, por ultimo existe el \emph{sistema aislado} cuyas fronteras impiden completamente el intercambio de energía y masa hacia los alrededores, naturalmente no existen sistemas completamente aislados pero se puede utilizar el concepto de sistema aislado para aproximar diferentes sistemas.
 
+A los sistemas cerrados también se les puede denominar \emph{masa de control}, y a los sistemas abiertos como \emph{volumen de control}, y a su vez a la frontera de un sistema abierto se le denomina \emph{superficie de control}. En este punto es preciso hacer una aclaración sobre el concepto de masa invariable del párrafo anterior, en los sistemas abiertos, aun cuando la magnitud de la masa al interior del sistema abierto puede permanecer constante, no se considera como una masa invariable ya que al existir entrada y salida de materia, las partículas presentes en un instante de tiempo no son las mismas en cualquier otro instante de tiempo, razón por la cual se considera que la masa ha cambiado aun cuando en magnitud puedan ser iguales.
+
+
+\clearpage
 \renewcommand{\nomname}{Nomenclatura del capítlo}
 \printnomenclature
 

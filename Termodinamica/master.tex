@@ -1,31 +1,33 @@
 \PassOptionsToPackage{backref=true}{biblatex} %Agrega las referencias inversas en la bibliografía pasando backref=true a biblatex
+\PassOptionsToPackage{nopatch=eqnum}{microtype} %Agrega la opción para no corregir  la numeración de ecuaciones al paquete microtype
 \documentclass[10pt, letterpaper]{article}
 \input{../preambulo.tex} % Agrega el preámbulo base del repositorio 
 
+\usepackage{bm} %Símbolos matemáticos en negritas
+\usepackage[OMLmathsans]{isomath} %Agrega soporte para símbolos en negritas para fuentes OML
 \usepackage{subfiles} %Permite modular el archivo principal es varios "subfiles" para su compilación conjunta o individual
 \usepackage{lua-widow-control} %Control de viudas y huérfanas apoyado en lua
-\usepackage{bm} %Símbolos matemáticos en negritas
 \usepackage{longtable} %Parte las tablas largas en varias paginas cuando es necesario
 \usepackage{booktabs} %Mejoras estilísticas a las tablas
 
 \usepackage{tikz} %cargar el paquete tikz
-\usetikzlibrary{hobby}
+\usetikzlibrary{hobby} %librería para formar trazos de formas irregulares
 
 \usepackage{siunitx} %Usa el paquete para escribir unidades del SI
+\sisetup{detect-all}
 \DeclareSIUnit\inch{in} %Declara el uso de la unidad inglesa pulgada 
 \DeclareSIUnit\feet{ft} %Declara el uso de la unidad inglesa pie
 
 \usepackage{nomencl} %Crea la lista que incluye las nomenclaturas de símbolos
-\makenomenclature
+\makenomenclature %Llama a makeindex a realizar la nomenclatura
 
-\usepackage{caption}
-\captionsetup[table]{name=Tabla}
+\usepackage{caption} %cambia el comportamiento de los captions
+\captionsetup[table]{name=Tabla} %Renombra el nombre de las tablas de cuadra a
 
 \addbibresource{\subfix{../Bibliografia/Libros.bib}} %Conecta con el archivo de referencias principal de libros
 
 \title{Termodinámica} %Titulo del documento
 \author{Daniel Alejandro Hernández del Angel} %Autor del documento
-
 
 \begin{document}
 
