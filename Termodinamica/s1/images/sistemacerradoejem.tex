@@ -1,0 +1,16 @@
+\documentclass[tikz]{standalone}
+\input{../../../Preambulos/onlytikzpicture.tex}
+\usetikzlibrary{patterns}
+\begin{document}
+    \begin{tikzpicture}[scale=1]
+        \draw (-1,1) -- (-1,-2) -- (2,-2) -- (2,1); %Recipiente principal
+        \draw[pattern=north west lines] (-0.925,0.5) rectangle (1.925,0.9); %pistón
+        \draw (0.25,0.9) rectangle (0.75,1.65); %Barra del pistón
+        \node at (0.5,-0.75) {\small Fluido};
+        \draw[densely dashed] (-0.9,-1.9) rectangle (1.9, 0.4); %Fronteras
+        \draw[-stealth] (-1.75,-0.6) -- node[above left] {\small Frontera} (-0.9,-0.6); %linea para marcar la frontera
+        \draw[-stealth] (-1.75,0.7) -- node[above left] {\small Pistón} (-0.9,0.7); %linea para marcar la frontera
+        \draw[draw=none] (-2.8,-2) rectangle (3.8, 1);
+    \end{tikzpicture}
+    
+\end{document}

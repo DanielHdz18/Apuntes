@@ -1,15 +1,18 @@
 \PassOptionsToPackage{backref=true}{biblatex} %Agrega las referencias inversas en la bibliografía pasando backref=true a biblatex
-\PassOptionsToPackage{nopatch=eqnum}{microtype} %Agrega la opción para no corregir  la numeración de ecuaciones al paquete microtype
+\PassOptionsToPackage{footskip=1.35cm}{geometry} %Agrega la opción para no corregir  la numeración de ecuaciones al paquete microtype
+%\PassOptionsToPackage{draft}{graphicx}
 \documentclass[10pt, letterpaper]{article}
 \input{../Preambulos/general.tex} % Agrega el preámbulo base del repositorio 
 
 \usepackage{bm} %Símbolos matemáticos en negritas
 \usepackage[OMLmathsans]{isomath} %Agrega soporte para símbolos en negritas para fuentes OML
 \usepackage{subfiles} %Permite modular el archivo principal es varios "subfiles" para su compilación conjunta o individual
-\usepackage{lua-widow-control} %Control de viudas y huérfanas apoyado en lua
 \usepackage{longtable} %Parte las tablas largas en varias paginas cuando es necesario
 \usepackage{booktabs} %Mejoras estilísticas a las tablas
+\usepackage[bottom]{footmisc} %Fuerza a las notas a estar al final de la pagina
 
+\usepackage{lua-widow-control} %Control de viudas y huérfanas apoyado en lua
+\lwcsetup{balanced} %configuración balanceada para el control de viudas y huérfanas
 
 \usepackage{siunitx} %Usa el paquete para escribir unidades del SI
 \sisetup{detect-all}
@@ -20,7 +23,9 @@
 \makenomenclature %Llama a makeindex a realizar la nomenclatura
 
 \usepackage{caption} %cambia el comportamiento de los captions
-\captionsetup[table]{name=Tabla} %Renombra el nombre de las tablas de cuadra a
+\captionsetup[table]{name=Tabla} %Renombra el nombre de las tablas de cuadra a tabla
+
+\usepackage{subcaption} %Agrega subfiguras
 
 \addbibresource{\subfix{../Bibliografia/Libros.bib}} %Conecta con el archivo de referencias principal de libros
 
