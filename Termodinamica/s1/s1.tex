@@ -9,7 +9,7 @@ La termodinámica nació en el siglo XIX, debido al surgimiento de las máquinas
 
 Todos los procesos de interconversión de energía (o procesos termodinámicos) requieren de un equipo para este fin, los ingenieros utilizan las leyes de la termodinámica en combinación con otras ciencias como la mecánica de fluidos y los fenómenos de transporte para analizar, diseñar y optimizar estos equipos donde se transforma la energía de un tipo a otra. El resultado de la aplicación de la termodinámica en estos equipos puede conllevar una mejora en el rendimiento, a la reducción de los costos totales, a un menor uso de recursos escasos o a un menor impacto ambiental \parencites{wark}{moranshapiro}.
 
-Ejemplow de interconversiones cotidianas y los equipos utilizados son la conversión de calor en electricidad en las centrales eléctricas para la generación de energía eléctrica, de trabajo eléctrico en un efecto de enfriamiento para el enfriamiento en los aires acondicionados, de trabajo mecánico en energía cinética en los motores de los automóviles \parencite{faires}.
+Ejemplos de interconversiones cotidianas y los equipos utilizados son la conversión de calor en electricidad en las centrales eléctricas para la generación de energía eléctrica, de trabajo eléctrico en un efecto de enfriamiento para el enfriamiento en los aires acondicionados, de trabajo mecánico en energía cinética en los motores de los automóviles \parencite{faires}.
 
 Las propiedades termodinámicas, que serán definidas más adelante, y las relaciones entre los distintos tipos de energía se pueden estudiar por dos métodos. El primero de ellos se conoce como \textbf{termodinámica clásica}, en este modelo las propiedades y leyes son independientes de la estructura atómica y molecular así como independientes de los mecanismos de reacción y de la interacción entre las partículas. Este es un punto de vista macroscópico de la materia y debido a que se basa en medidas macroscópicas a medida que se avanza en el conocimiento de la estructura atómica las leyes termodinámicas no cambian \parencites{faires}{glasstone}{wark}.
 
@@ -69,24 +69,36 @@ En la figura \ref{sfig:cerrado} se puede observar un sistema conformado por la m
     \begin{subcaptionblock}{0.4\linewidth}
         \centering
         \includegraphics{images/sistemacerradoejem}
-        \caption{Sistema cerrado en un cilindro émbolo}
+        \caption{Sistema cerrado en un cilindro émbolo.}
         \label{sfig:cerrado}
     \end{subcaptionblock}
     \begin{subcaptionblock}{0.4\linewidth}
         \centering
         \includegraphics{images/sistemaabiertoejem}
-        \caption{Sistema abierto en una tubería}
+        \caption{Sistema abierto en una tubería.}
         \label{sfig:abierto}
     \end{subcaptionblock}
-    \caption{Representación de dos sistemas termodinámicos}
+    \caption{Representación de dos sistemas termodinámicos.}
 \end{figure}
+
+Un sistema puede estar conformado por varias fases al interior de sus fronteras. Una fase es una cantidad de materia homogénea en cuanto a su estructura física, en general reconocemos tres tipos de fases posibles; gaseosa, líquida y solida\footnote{No confundir fase con estado de la materia, por ejemplo en un recipiente que contiene agua y aceite se formaran dos fases claramente delimitadas debido a la diferencia de densidades, pero solo existirá un solo estado de la materia; el líquido.}. Los sistemas pueden contener dos fases, por ejemplo en un proceso de evaporación se encuentran presentes la fase líquida y gaseosa, debido a la existencia de estas dos fases se establece una frontera interna que delimita el espacio ocupado por el líquido del ocupado por el gas, en este sentido se puede hablar de dos tipos de sistemas referidos a la composición física del sistema; \emph{sistemas homogéneos} que contienen una única fase y \emph{sistemas heterogéneos} que contienen dos o más fases \parencites{wark}{glasstone}.
 
 \subsubsection{Propiedades}
 
 Para que la termodinámica pueda estudiar los cambios de energía en un sistema es necesario poder describir el sistema en un momento determinado, a estas variables que describen a un sistema se les conoce como \emph{propiedades}, las propiedades son características macroscópicas de un sistema entre las que se incluyen la presión, temperatura, densidad, y volumen especifico a las que se les puede asignar un valor numérico independientemente de la historia del sistema. Con frecuencia una propiedad es directamente mensurable, o puede ser obtenida como el producto de otras propiedades, nótese como las propiedades llevan asociadas una dimensión y por tanto unidades, de modo que su valor depende del sistema de unidades utilizado en la medición \parencites{moranshapiro}{faires}{wark}.
 
+Las propiedades se pueden clasificar en dos tipos, las \emph{propiedades intensivas} son independientes de la cantidad de materia del sistema; temperatura, presión y densidad son algunas propiedades intensivas, y las \emph{propiedades extensivas} que dependen de la masa presente en el sistema y son totales; por ejemplo volumen total y energía total. Es costumbre utilizar las letras mayúsculas para las propiedades intensivas y las minúsculas para las intensivas, excepciones a esta costumbre son el uso de la letra \( m \) para denotar la masa, que es naturalmente extensiva, y el uso de \( P \) y \( T \) para la presión y la temperatura respectivamente\footnote{Se puede consultar la nomenclatura utilizada para cada propiedad al final del documento.} \parencites{wark}{faires}{cengelt}.
 
+Cuando una propiedad extensiva de un sistema se divide entre la masa del sistema se tiene como resultado una \emph{propiedad específica} y son también propiedades intensivas, de igual manera se sigue la convención de usar una letra minúscula para las propiedades específicas \parencite{wark}.
 
+Para entender mejor las diferencias entre propiedades intensivas y extensivas considere el sistema de la figura \ref{fig:subsisprop} como un sistema homogéneo que es dividido arbitrariamente en dos subsistemas marcados en la figura, cada subsistema tiene una determinada masa y volumen ocupado, así como una presión y una temperatura. En este sistema resulta bastante intuitivo que la masa y volumen total del sistema es exactamente la suma de las masas y volúmenes de ambos subsistemas, entonces si el valor total de una propiedad del sistema es igual a la suma de los valores de cada subsistema se considera una propiedad intensiva. Por otro lado no tendría sentido decir que la temperatura del sistema es igual a la suma de las temperaturas en cada subsistema, por lo que esta propiedad es extensiva. Analogías similares pueden ser usadas para intuir la naturaleza de una propiedad \parencites{wark}{cengelt}{moranshapiro}. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{images/propextint.pdf}
+    \caption{Subsistemas para el ejemplo del texto}
+    \label{fig:subsisprop}
+\end{figure}
 
 \clearpage
 \renewcommand{\nomname}{Nomenclatura del capítlo}
