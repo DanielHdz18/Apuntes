@@ -32,7 +32,7 @@ Existen determinadas reglas para poder operar con las unidades. La primera de el
 
 Entonces un sistema de unidades toma una serie de dimensiones básicas a partir de las cuales se eligen arbitrariamente unidades básicas para realizar mediciones sobre las dimensiones básicas. Generalmente en física se suelen elegir como dimensiones básicas las siguientes dimensiones; longitud \textbf{L}\nomenclature{\textbf{L}}{Longitud}, tiempo \textbf{T}\nomenclature{\textbf{T}}{Tiempo}, masa \textbf{M}\nomenclature{\textbf{M}}{Masa}, temperatura \(\bm{\Theta}\)\nomenclature{\(\bm{\Theta}\)}{Temperatura}, corriente eléctrica \textbf{I}\nomenclature{\textbf{I}}{Corriente eléctrica}, cantidad de materia \textbf{N}\nomenclature{\textbf{N}}{Cantidad de materia}, y la intensidad luminosa \textbf{J}\nomenclature{\textbf{J}}{Intensidad luminosa}, estas ultimas son la base del denominado Sistema Internacional de Unidades (SI), las unidades básicas para cada dimensión, así como los símbolos usados en el SI se presentan en la tabla \ref{tab:unidades_si} \parencite{volker}.
 
-\begin{longtable}[htbp!]{lclc}
+\begin{longtable}[htbp]{lclc}
     \caption{Resumen de las dimensiones y unidades usadas en el SI.} \label{tab:unidades_si} \tabularnewline
     \toprule
     Dimension base        & Símbolo de la dimensión & Unidad base & Símbolo de la unidad \\ \midrule(lr)
@@ -44,7 +44,7 @@ Entonces un sistema de unidades toma una serie de dimensiones básicas a partir 
     Intensidad luminosa   & \textbf{J}              & Candela     & \si{\candela}        \\
     Temperatura           & \(\bm{\Theta}\)         & Kelvin      & \si{\kelvin}         \\
     \bottomrule
-    \caption*{Adaptada de \cite{doran}}
+    \caption*{Adaptada de \cite{doran}.}
 \end{longtable}
 
 \subsubsection{Sistemas termodinámicos}
@@ -60,7 +60,7 @@ Un sistema termodinámico es un cierto volumen en el espacio o una cantidad fini
 
 Los sistemas pueden clasificarse de varias maneras: Un \emph{sistema cerrado} es aquel en el que no hay flujo de masa a través de su frontera, es decir aquel sistema con una masa invariable, pero puede intercambiar energía con los alrededores por medio de sus fronteras, por el contrario un \emph{sistema abierto} es aquel donde existe un flujo a través de las fronteras del sistema, por lo que la materia al interior del sistema no permanece invariable, y puede intercambiar energía con los alrededores, por ultimo existe el \emph{sistema aislado} cuyas fronteras impiden completamente el intercambio de energía y masa hacia los alrededores, no existen sistemas completamente aislados pero se puede utilizar el concepto de sistema aislado para aproximar diferentes sistemas.
 
-A los sistemas cerrados también se les puede denominar \emph{masa de control}, y a los sistemas abiertos como \emph{volumen de control}\footnote{Es importante aclarar que un volumen de control puede tener fronteras móviles, y por tanto cambiar su volumen durante el proceso, aunque este ultimo caso es poco usual.}, y a su vez a la frontera de un sistema abierto se le denomina \emph{superficie de control}. En este punto es preciso hacer una aclaración sobre el concepto de masa invariable del párrafo anterior, en los sistemas abiertos, aun cuando la magnitud de la masa al interior del sistema abierto puede permanecer constante, no se considera como una masa invariable ya que al existir entrada y salida de materia, las partículas presentes en un instante de tiempo no son las mismas que en cualquier otro instante de tiempo, razón por la cual se considera que la masa ha cambiado aun cuando en magnitud puedan ser iguales \parencites{clavell}{faires}{wark}.
+A los sistemas cerrados también se les puede denominar \emph{masa de control}, y a los sistemas abiertos como \emph{volumen de control}\footnote{Un volumen de control puede tener fronteras móviles, y por tanto cambiar su volumen durante el proceso, aunque este ultimo caso es poco usual.}, y a su vez a la frontera de un sistema abierto se le denomina \emph{superficie de control}. En este punto es preciso hacer una aclaración sobre el concepto de masa invariable del párrafo anterior, en los sistemas abiertos, aun cuando la magnitud de la masa al interior del sistema abierto puede permanecer constante, no se considera como una masa invariable ya que al existir entrada y salida de materia, las partículas presentes en un instante de tiempo no son las mismas que en cualquier otro instante de tiempo, razón por la cual se considera que la masa ha cambiado aun cuando en magnitud puedan ser iguales \parencites{clavell}{faires}{wark}.
 
 En la figura \ref{sfig:cerrado} se puede observar un sistema conformado por la masa presente al interior de un dispositivo cilindro émbolo, en este caso la frontera es en real en su totalidad, dado que la frontera coincide con los limites físicos del recipiente y la cara interior del émbolo. Mientras que en la figura \ref{sfig:abierto} el volumen de control conformado por una sección de la tubería posee una frontera mixta, ya que una parte de la frontera es la superficie interior de la tubería, en tanto que la otra parte es una elección arbitraría para delimitar la sección en la tubería.
 
@@ -81,7 +81,9 @@ En la figura \ref{sfig:cerrado} se puede observar un sistema conformado por la m
     \caption{Representación de dos sistemas termodinámicos.}
 \end{figure}
 
-Un sistema puede estar conformado por varias fases al interior de sus fronteras. Una fase es una cantidad de materia homogénea en cuanto a su estructura física, en general reconocemos tres tipos de fases posibles; gaseosa, líquida y solida\footnote{No confundir fase con estado de la materia, por ejemplo en un recipiente que contiene agua y aceite se formaran dos fases claramente delimitadas debido a la diferencia de densidades, pero solo existirá un solo estado de la materia; el líquido.}. Los sistemas pueden contener dos fases, por ejemplo en un proceso de evaporación se encuentran presentes la fase líquida y gaseosa, debido a la existencia de estas dos fases se establece una frontera interna que delimita el espacio ocupado por el líquido del ocupado por el gas, en este sentido se puede hablar de dos tipos de sistemas referidos a la composición física del sistema; \emph{sistemas homogéneos} que contienen una única fase y \emph{sistemas heterogéneos} que contienen dos o más fases \parencites{wark}{glasstone}.
+Un sistema puede estar conformado por varias fases al interior de sus fronteras. Una fase es una cantidad de materia homogénea en cuanto a su estructura física, en general reconocemos tres tipos de fases posibles; gaseosa, líquida y solida. Los sistemas pueden contener dos fases, por ejemplo en un proceso de evaporación se encuentran presentes la fase líquida y gaseosa, debido a la existencia de estas dos fases se establece una frontera interna que delimita el espacio ocupado por el líquido del ocupado por el gas, en este sentido se puede hablar de dos tipos de sistemas referidos a la composición física del sistema; \emph{sistemas homogéneos} que contienen una única fase y \emph{sistemas heterogéneos} que contienen dos o más fases \parencites{wark}{glasstone}.
+
+No se debe confundir fase con estado de la materia, por ejemplo en un recipiente que contiene agua y aceite se formaran dos fases claramente delimitadas debido a la diferencia de densidades, pero solo existirá un solo estado de la materia; el líquido, de igual manera el número de componentes del sistema es indiferente a las fases, ejemplo es un sistema que contenga vapor de agua y agua en estado líquido, que tiene un solo componente pero dos fases.
 
 \subsubsection{Propiedades}
 
@@ -89,16 +91,33 @@ Para que la termodinámica pueda estudiar los cambios de energía en un sistema 
 
 Las propiedades se pueden clasificar en dos tipos, las \emph{propiedades intensivas} son independientes de la cantidad de materia del sistema; temperatura, presión y densidad son algunas propiedades intensivas, y las \emph{propiedades extensivas} que dependen de la masa presente en el sistema y son totales; por ejemplo volumen total y energía total. Es costumbre utilizar las letras mayúsculas para las propiedades intensivas y las minúsculas para las intensivas, excepciones a esta costumbre son el uso de la letra \( m \) para denotar la masa, que es naturalmente extensiva, y el uso de \( P \) y \( T \) para la presión y la temperatura respectivamente\footnote{Se puede consultar la nomenclatura utilizada para cada propiedad al final del documento.} \parencites{wark}{faires}{cengelt}.
 
-Cuando una propiedad extensiva de un sistema se divide entre la masa del sistema se tiene como resultado una \emph{propiedad específica} y son también propiedades intensivas, de igual manera se sigue la convención de usar una letra minúscula para las propiedades específicas \parencite{wark}.
+Cuando una propiedad extensiva de un sistema se divide entre la masa del sistema se tiene como resultado una \emph{propiedad específica} y son también propiedades intensivas, de igual manera se sigue la convención de usar una letra minúscula para las propiedades específicas. Las variables específicas reciben el mismo nombre que las extensivas de las que proceden, seguida de la palabra específica, un ejemplo de la nomenclatura y forma de escribir el nombre estas propiedades se presentan en la tabla \ref{tab:propextint} \parencite{wark}.
 
-Para entender mejor las diferencias entre propiedades intensivas y extensivas considere el sistema de la figura \ref{fig:subsisprop} como un sistema homogéneo que es dividido arbitrariamente en dos subsistemas marcados en la figura, cada subsistema tiene una determinada masa y volumen ocupado, así como una presión y una temperatura. En este sistema resulta bastante intuitivo que la masa y volumen total del sistema es exactamente la suma de las masas y volúmenes de ambos subsistemas, entonces si el valor total de una propiedad del sistema es igual a la suma de los valores de cada subsistema se considera una propiedad intensiva. Por otro lado no tendría sentido decir que la temperatura del sistema es igual a la suma de las temperaturas en cada subsistema, por lo que esta propiedad es extensiva. Analogías similares pueden ser usadas para intuir la naturaleza de una propiedad \parencites{wark}{cengelt}{moranshapiro}. 
+\begin{longtable}[htbp]{lclc}
+    \caption{Algunas propiedades importantes en el estudio de la termodinámico y sus equivalentes específicas.} \label{tab:propextint} \tabularnewline
+    \toprule
+    Propiedad extensiva & Símbolo & Propiedad específica       & Símbolo \\ \midrule(lr)
+    Volumen             & \( V \) & Volumen específico         & \( v \) \\
+    Energía interna     & \( U \) & Energía interna específica & \( u \) \\
+    Entalpía            & \( H \) & Entalpía específica        & \( h \) \\
+    Entropía            & \( S \) & Entropía específica        & \( s \) \\
+    \bottomrule
+    \caption*{Adaptada de \cite{clavell}.}
+\end{longtable}
+
+
+Para entender mejor las diferencias entre propiedades intensivas y extensivas considere el sistema de la figura \ref{fig:subsisprop} como un sistema homogéneo que es dividido arbitrariamente en dos subsistemas marcados en la figura, cada subsistema tiene una determinada masa y volumen ocupado, así como una presión y una temperatura. En este sistema resulta bastante intuitivo que la masa y volumen total del sistema es exactamente la suma de las masas y volúmenes de ambos subsistemas, entonces si el valor total de una propiedad del sistema es igual a la suma de los valores de cada subsistema se considera una propiedad intensiva. Por otro lado no tendría sentido decir que la temperatura del sistema es igual a la suma de las temperaturas en cada subsistema, por lo que esta propiedad es extensiva. Analogías similares pueden ser usadas para intuir la naturaleza de una propiedad \parencites{wark}{cengelt}{moranshapiro}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics{images/propextint.pdf}
-    \caption{Subsistemas para el ejemplo del texto}
+    \caption{Subsistemas para el ejemplo del texto.}
     \label{fig:subsisprop}
 \end{figure}
+
+No todo lo que puede ser medido con una dimensión es necesariamente una propiedad, ejemplo de ello es el calor, trabajo y flujo de masa, en los siguientes subtemas se desarrollara con más profundidad como diferenciar de una magnitud que es una propiedad de una que no lo es \parencite{moranshapiro}.
+
+
 
 \clearpage
 \renewcommand{\nomname}{Nomenclatura del capítlo}
