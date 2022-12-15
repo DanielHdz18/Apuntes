@@ -1,6 +1,6 @@
-\documentclass[tikz]{standalone}
-\input{../../../Preambulos/onlytikzpicture.tex}
-\usetikzlibrary{patterns}
+%\documentclass[tikz]{standalone}
+%\input{../../../Preambulos/onlytikzpicture.tex}
+\documentclass[../../master.tex]{subfiles}
 \begin{document}
     \begin{tikzpicture}[scale=1]
         \draw (-1,1) -- (-1,-2) -- (2,-2) -- (2,1); %Recipiente principal
@@ -12,5 +12,4 @@
         \draw[-stealth] (-1.75,0.7) -- node[above left] {\small Pistón} (-0.9,0.7); %linea para marcar el pistón
         \draw[draw=none] (-2.8,-2) rectangle (3.8, 1);
     \end{tikzpicture}
-    
 \end{document}
